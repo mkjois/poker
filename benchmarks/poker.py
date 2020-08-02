@@ -322,5 +322,5 @@ if __name__ == '__main__':
             if eval_ranks != lookup_ranks or eval_class != lookup_class:
                 print('[ERROR]', ''.join(map(card_str_repr, hand.by_rank)), eval_ranks, eval_class, lookup_ranks, lookup_class)
 
-        print(f'{ncards : >2} cards lookup(), {iterations: >{iter_digits}} iters,  avg time (us): {micros_lookup / iterations : >12.3f}')
-        print(f'{ncards : >2} cards   eval(), {iterations: >{iter_digits}} iters,  avg time (us): {micros_eval   / iterations : >12.3f}')
+        print(f'{ncards : >2} cards lookup(), {iterations: >{iter_digits}} iters,  avg time (µs): {micros_lookup / iterations : >12.3f}')
+        print(f'{ncards : >2} cards   eval(), {iterations: >{iter_digits}} iters,  avg time (µs): {micros_eval   / iterations : >12.3f}')
